@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  transition: background-color ease 0.4s;
+}
+
+.input {
+  padding: 15px 10px;
+  font-size: calc(10px + 2vmin);
+  width: 14vw;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.output {
+  padding: 15px 10px;
+  font-size: calc(10px + 2vmin);
+  min-height: 23px;
+  width: 14vw;
+  text-align: center;
+  color: white;
+  background-color: rgba(30,30,30,0.5);
+}
