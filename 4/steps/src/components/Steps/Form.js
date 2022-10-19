@@ -15,7 +15,7 @@ export default function Form(props) {
   return (
     <form onSubmit={submitHandler}>
       <input type='date' value={formData.date} name='date' onChange={changeHandler} required></input>
-      <input type='text' placeholder='Пройдено км' value={formData.distance} min='0' name='distance' onChange={changeHandler} required></input>
+      <input type='number' placeholder='Пройдено км' value={formData.distance} name='distance' onChange={changeHandler} required></input>
       <button>OK</button>
     </form>
   )

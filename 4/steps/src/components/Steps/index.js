@@ -17,15 +17,16 @@ export default function Steps() {
   let [formData, setFormData] = React.useState({date: '2022-10-17', distance: '12'})
 
   const submitHandler = (formData) => {
-    if (list.filter((el) => el.date === formData.date).length === 1) {
-      return setList(
-        dateSort([...list.filter((el) => el.date !== formData.date), formData])
-      )
+    let same = list.filter((el) => el.date === formData.date)[0]
+    if (same) {
+      return setList(dateSort([
+        ...list.filter((el) => el.date !== formData.date), 
+        {date: formData.date, distance: +same.distance + +formData.distance}
+      ]))
     }
     setList(dateSort([...list, formData]))
   }
   const editHandler = (elm) => {
-    console.log(elm)
     setFormData(elm)
   }
   const deleteHandler = (del) => {
