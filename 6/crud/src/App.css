@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.update, .send {
+  font-size: 20px;
+  margin-left: 1.5rem;
+  height: fit-content;
+}
+
+.form {
+  position: relative;
+}
+.send{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.notes {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.note-container{
+  padding: 15px 25px;
+  position: relative;
+  max-width: 30vw;
+  border: 1px #777 solid;
+  margin: 10px;
+}
+.note-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content {
+  overflow-wrap: break-word;
+}
